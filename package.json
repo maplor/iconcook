@@ -1,0 +1,30 @@
+{
+  "name": "iconcook",
+  "version": "0.1.0",
+  "description": "基于 Pipcook 训练的纯前端图标识别工具",
+  "dependencies": {
+    "@alicloudfe/components": "^1.1.42",
+    "@tensorflow/tfjs": "^2.8.6",
+    "moment": "^2.24.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@iceworks/spec": "^1.0.0",
+    "build-plugin-fusion": "^0.1.0",
+    "build-plugin-moment-locales": "^0.1.0",
+    "eslint": "^6.8.0",
+    "ice.js": "^1.0.0",
+    "stylelint": "^13.2.0"
+  },
+  "scripts": {
+    "start": "icejs start",
+    "build": "icejs build",
+    "icon": "node createImg.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maplor/iconcook"
+  },
+  "private": true
+}

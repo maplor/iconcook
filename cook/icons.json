@@ -1,0 +1,35 @@
+{
+  "plugins": {
+    "dataCollect": {
+      "package": "@pipcook/plugins-image-classification-data-collect",
+      "params": {
+        "url": "file:///指向训练样本地址.zip"
+      }
+    },
+    "dataAccess": {
+      "package": "@pipcook/plugins-pascalvoc-data-access"
+    },
+    "dataProcess": {
+      "package": "@pipcook/plugins-tfjs-image-classification-process",
+      "params": {
+        "resize": [224, 224]
+      }
+    },
+    "modelDefine": {
+      "package": "@pipcook/plugins-tfjs-mobilenet-model-define",
+      "params": {
+        "freeze": false
+      }
+    },
+    "modelTrain": {
+      "package": "@pipcook/plugins-image-classification-tfjs-model-train",
+      "params": {
+        "batchSize": 64,
+        "epochs": 12
+      }
+    },
+    "modelEvaluate": {
+      "package": "@pipcook/plugins-image-classification-tfjs-model-evaluate"
+    }
+  }
+}

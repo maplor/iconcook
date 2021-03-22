@@ -1,0 +1,32 @@
+.uploadArea {
+  position: relative;
+  border-radius: 4px;
+  border: 1px dashed #ccc;
+  height: 300px;
+  margin-bottom: 20px;
+  input {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.placeholder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 300px;
+  z-index: -1;
+  text-align: center;
+  color: #dcdee3;
+  font-size: 20px;
+}
+.img {
+  width: 48px;
+  height: 48px;
+}
