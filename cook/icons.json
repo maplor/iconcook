@@ -3,7 +3,7 @@
     "dataCollect": {
       "package": "@pipcook/plugins-image-classification-data-collect",
       "params": {
-        "url": "file:///指向训练样本地址.zip"
+        "url": "file://指向训练样本地址.zip"
       }
     },
     "dataAccess": {
